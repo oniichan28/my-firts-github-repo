@@ -50,7 +50,8 @@ main {
 }
 
 .image-placeholder {
- width: 500px;
+ width: 100%;
+ max-width: 500px;
   height: auto;
   object-fit: cover;
   background-color: #7485a0;
@@ -100,4 +101,47 @@ footer {
     color: white;
     padding: 50px;
     text-align: center;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .place h2 {
+    font-size: 1.4em;
+  }
+
+  .background {
+    padding: 30px 10px;
+  }
+
+  .image-placeholder {
+    width: 100%;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+
+  .about, .place, header, footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .place h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
 }
